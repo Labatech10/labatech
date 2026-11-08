@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louis | Portfolio Robotique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Labatech</h1>
+        <p>Maker • Robotique • Impression 3D • Programmation</p>
+    </header>
+
+
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#creations">Mes créations</a>
+        <a href="#realisations">Projets réalisés</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <section id="about">
+
+        <h2>À propos de moi</h2>
+
+        <p>
+            Je suis passionné par la création de projets techniques.
+            J'aime transformer une idée en objet réel grâce à la
+            modélisation 3D, l'électronique et la programmation.
+        </p>
+
+        <p>
+            Mon objectif est de développer mes compétences dans
+            la robotique et la mécatronique.
+        </p>
+
+    </section>
+
+
+    <section id="creations">
+
+        <h2>Mes créations</h2>
+
+        <div class="creations-scroller">
+
+            <div class="creation-item">
+                <img src="assets/creations/support-tablette.png" alt="Support pour tablette/téléphone imprimé en 3D">
+                <p>porte casque</p>
+            </div>
+
+            <div class="creation-item">
+                <img src="assets/creations/pichet.png" alt="Pichet imprimé en 3D">
+                <p>Arrosoir</p>
+            </div>
+
+            <div class="creation-item">
+                <img src="assets/creations/gamelle-ricky.png" alt="Gamelle personnalisée pour chien imprimée en 3D">
+                <p>Gamelle personnalisée</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="realisations">
+
+        <h2>Projets réalisés</h2>
+
+        <div class="creations-scroller">
+
+            <div class="creation-item project-item">
+                <img src="assets/projets/traducteur-morse.png"
+                    alt="Simulation du traducteur Morse sur Arduino Uno : l’écran LCD affiche la séquence Morse et le mot HELLO">
+                <p>Traducteur Morse – Arduino</p>
+
+                <button class="more-btn" type="button" aria-expanded="false" aria-controls="details-morse">En savoir
+                    plus</button>
+
+                <div class="project-details" id="details-morse" hidden>
+                    <h3>Traducteur Morse – Arduino</h3>
+
+                    <p><b>Conception et programmation d'un traducteur Morse interactif à l'aide d'un Arduino Uno.</b>
+                    </p>
+
+                    <p>Ce projet consiste à créer un appareil capable de convertir des séquences de points et de tirets
+                        en lettres de l'alphabet grâce au code Morse.</p>
+
+                    <p>Le système utilise plusieurs boutons pour saisir les signaux :</p>
+                    <ul>
+                        <li>Un bouton pour envoyer un point (<code>.</code>).</li>
+                        <li>Un bouton pour envoyer un tiret (<code>-</code>).</li>
+                        <li>Un bouton pour traduire la séquence en lettre.</li>
+                        <li>Un bouton RESET pour réinitialiser la saisie.</li>
+                    </ul>
+
+                    <p>Un écran LCD 16×2 permet d'afficher les séquences Morse ainsi que les lettres obtenues. Une LED
+                        et un buzzer fournissent également un retour visuel et sonore lors de chaque saisie.</p>
+
+                    <p><b>Technologies et composants utilisés :</b></p>
+                    <ul>
+                        <li>Arduino Uno</li>
+                        <li>Programmation en C/C++</li>
+                        <li>Écran LCD 16×2</li>
+                        <li>Boutons poussoirs</li>
+                        <li>LED</li>
+                        <li>Buzzer</li>
+                    </ul>
+
+                    <p><b>Objectifs et compétences développées :</b></p>
+
+                    <p>Ce projet m'a permis d'approfondir mes connaissances en programmation embarquée, notamment dans
+                        la gestion des entrées et sorties numériques, l'utilisation des conditions, des boucles et des
+                        fonctions, ainsi que la manipulation des variables et des chaînes de caractères.</p>
+
+                    <p>Il m'a également permis de découvrir l'interaction entre un programme informatique et des
+                        composants électroniques physiques.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="projects">
+
+        <h2>Mes projets</h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>🤖 Robot Arduino</h3>
+
+                <p>
+                    Création d'un robot avec moteurs,
+                    électronique et programmation.
+                </p>
+
+                <p>
+                    <b>Technologies :</b><br>
+                    Arduino • C++ • Moteurs • Capteurs
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>🖨️ Modélisation 3D</h3>
+
+                <p>
+                    Conception de pièces personnalisées
+                    avec Fusion 360 pour impression 3D.
+                </p>
+
+                <p>
+                    <b>Technologies :</b><br>
+                    Fusion 360 • STL • Impression 3D
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>💻 Programmation</h3>
+
+                <p>
+                    Création de projets logiciels
+                    en Python et développement web.
+                </p>
+
+                <p>
+                    <b>Technologies :</b><br>
+                    Python • HTML • CSS • JavaScript
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="skills">
+
+        <h2>Mes compétences</h2>
+
+        <p class="skills-intro">
+            Les domaines techniques que j'explore et développe
+            à travers mes différents projets.
+        </p>
+
+        <div class="skills-category">
+            <h3>💻 Programmation</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h4>Python</h4>
+                    <span class="skill-level acquired">Bases acquises</span>
+                    <p>Création de programmes, utilisation de fonctions,
+                        variables, conditions et boucles.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>C / C++</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Programmation, logique algorithmique et
+                        développement de programmes embarqués.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>HTML / CSS</h4>
+                    <span class="skill-level acquired">Bases acquises</span>
+                    <p>Création de pages web, structuration du contenu
+                        et mise en forme d'interfaces.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>JavaScript</h4>
+                    <span class="skill-level notions">Notions</span>
+                    <p>Découverte de la programmation interactive
+                        et du fonctionnement des pages web.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="skills-category">
+            <h3>🤖 Électronique et robotique</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h4>Arduino</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Programmation de cartes Arduino, gestion des
+                        entrées et sorties, boutons, LED et écrans LCD.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Électronique</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Réalisation de montages électroniques,
+                        branchement de composants et compréhension des circuits.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Robotique</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Découverte de la commande de moteurs,
+                        de la programmation de robots et des systèmes automatisés.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="skills-category">
+            <h3>🖨️ Conception et fabrication 3D</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h4>Fusion 360</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Conception de pièces en 3D, modélisation
+                        paramétrique et création d'objets personnalisés.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Tinkercad</h4>
+                    <span class="skill-level acquired">Bases acquises</span>
+                    <p>Modélisation 3D simple et expérimentation
+                        de circuits électroniques virtuels.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Impression 3D</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Préparation de modèles, réglage des supports
+                        et découverte des paramètres d'impression.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="skills-category">
+            <h3>🛠️ Développement et outils</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h4>Développement web</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Création et mise en ligne de sites web
+                        et organisation de pages.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Arduino IDE</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Écriture, compilation et téléversement
+                        de programmes sur des cartes Arduino.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>VS Code / PyCharm</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Utilisation d'environnements de développement
+                        pour écrire et organiser du code.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>OrcaSlicer</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Préparation de modèles 3D et découverte
+                        des paramètres de fabrication.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="skills-category">
+            <h3>🎬 Création de contenu</h3>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h4>Montage vidéo</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Montage de vidéos avec CapCut
+                        et création de contenu visuel.</p>
+                </div>
+
+                <div class="skill-card">
+                    <h4>Capture et streaming</h4>
+                    <span class="skill-level learning">En apprentissage</span>
+                    <p>Découverte de l'enregistrement d'écran,
+                        de la capture vidéo et de la configuration d'OBS.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Tu peux me contacter sur <mark>labatech@outlook.com </mark> pour discuter de projets
+            ou de créations techniques.
+        </p>
+
+    </section>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 Louis - Portfolio
+        </p>
+
+    </footer>
+
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+
+
+    <script>
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        document.querySelectorAll('.creation-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('.more-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const details = document.getElementById(btn.getAttribute('aria-controls'));
+                const open = details.hidden;
+                details.hidden = !open;
+                btn.setAttribute('aria-expanded', String(open));
+                btn.textContent = open ? 'Voir moins' : 'En savoir plus';
+            });
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            lightboxImg.src = '';
+        }
+
+        document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+    </script>
+
+
+</body>
+
+</html>

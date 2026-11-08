@@ -1,0 +1,356 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: #222;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+/* CREATIONS */
+
+.creations-scroller {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.creations-scroller::-webkit-scrollbar {
+    height: 8px;
+}
+
+.creations-scroller::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 10px;
+}
+
+.creation-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    background: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.creation-item:hover {
+    transform: translateY(-5px);
+}
+
+.creation-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.creation-item p {
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 18px;
+}
+
+/* PROJETS */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #222;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* LISTES */
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 15px;
+    font-size: 20px;
+}
+
+/* COMPETENCES */
+
+.skills-intro {
+    margin-bottom: 35px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.skills-category {
+    margin-bottom: 45px;
+}
+
+.skills-category h3 {
+    margin-bottom: 20px;
+    font-size: 23px;
+    border-left: 3px solid cyan;
+    padding-left: 12px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.skill-card {
+    padding: 22px;
+    border-radius: 12px;
+    background: #222;
+    border: 1px solid #333;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: cyan;
+}
+
+.skill-card h4 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.skill-level {
+    display: inline-block;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.skill-level.acquired {
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+}
+
+.skill-level.learning {
+    background: rgba(52, 152, 219, 0.15);
+    color: #55b9ff;
+}
+
+.skill-level.notions {
+    background: rgba(160, 160, 160, 0.15);
+    color: #aaa;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    color: cyan;
+}
+
+/* DETAILS DES PROJETS */
+
+.project-item {
+    width: 420px;
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+.project-item:hover {
+    transform: none;
+}
+
+.project-item img {
+    height: 240px;
+}
+
+.more-btn {
+    display: block;
+    margin: 0 auto 18px;
+    padding: 10px 22px;
+    background: transparent;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.more-btn:hover {
+    background: cyan;
+    color: #111;
+}
+
+.project-details {
+    padding: 0 22px 22px;
+    line-height: 1.5;
+}
+
+.project-details h3 {
+    margin-bottom: 12px;
+    color: cyan;
+}
+
+.project-details p {
+    text-align: left;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.project-details ul {
+    list-style: disc;
+    padding-left: 22px;
+    margin-bottom: 12px;
+}
+
+.project-details li {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+.project-details code {
+    background: #333;
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+
+    .creations-scroller {
+        justify-content: flex-start;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-category h3 {
+        font-size: 20px;
+    }
+}
